@@ -1,0 +1,11 @@
+{
+  "title": "Apache Confort Negro",
+  "reference": "Ref. 4800",
+  "price": "$195.000",
+  "color": "Negro Clásico",
+  "image": "Logos/shoe_negro.jpg",
+  "description": "El clásico apache en cuero negro de grano completo. Suela gruesa negra para un look más robusto, ideal para uso diario.",
+  "sizes": "38,39,40,41,42,43,44",
+  "available": true,
+  "featured": true
+}

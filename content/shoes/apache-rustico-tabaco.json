@@ -1,0 +1,11 @@
+{
+  "title": "Apache Rústico Tabaco",
+  "reference": "Ref. 5000",
+  "price": "$185.000",
+  "color": "Marrón Tabaco",
+  "image": "Logos/shoe_tabaco.jpg",
+  "description": "Zapato estilo apache en cuero envejecido color marrón tabaco. Pasadores de cuero crudo y costuras rústicas hechas a mano.",
+  "sizes": "38,39,40,41,42,43",
+  "available": true,
+  "featured": false
+}

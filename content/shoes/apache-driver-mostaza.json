@@ -1,0 +1,11 @@
+{
+  "title": "Apache Driver Mostaza",
+  "reference": "Ref. 4500",
+  "price": "$175.000",
+  "color": "Amarillo Mostaza",
+  "image": "Logos/shoe_mostaza.jpg",
+  "description": "Mocasín tipo driver en gamuza color mostaza, con suela de tacos de goma (pebbles) que brindan flexibilidad y agarre perfecto.",
+  "sizes": "38,39,40,41,42",
+  "available": true,
+  "featured": false
+}
