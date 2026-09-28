@@ -1,0 +1,11 @@
+{
+  "title": "Mocasín Otelo Café x Coñac",
+  "reference": "Otelo Café",
+  "price": "$195.000",
+  "color": "Café Oscuro con acentos Coñac",
+  "image": "Logos/shoe_otelo_cafe.jpg",
+  "description": "Clásico mocasín náutico en cuero café oscuro con elegantes detalles en color coñac. Ideal para cualquier ocasión casual.",
+  "sizes": "38,39,40,41,42,43,44",
+  "available": true,
+  "featured": false
+}

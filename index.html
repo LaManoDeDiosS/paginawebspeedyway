@@ -1714,34 +1714,7 @@
             <h3 class="modal-title">Guía de Tallas SPEEDY WAY ®</h3>
             <p class="modal-desc">Nuestras hormas son estándar para calzado de cuero colombiano. Te recomendamos medir la longitud de tu pie descalzo en centímetros:</p>
             
-            <table class="size-table">
-                <thead>
-                    <tr>
-                        <th>Talla (Colombia/EU)</th>
-                        <th>Largo del Pie (cm)</th>
-                        <th>Segmento</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td><strong>27 - 30</strong></td><td>17.0 - 19.0 cm</td><td>Niño / Juvenil</td></tr>
-                    <tr><td><strong>31 - 34</strong></td><td>19.5 - 21.5 cm</td><td>Juvenil</td></tr>
-                    <tr><td><strong>35 - 37</strong></td><td>22.0 - 23.5 cm</td><td>Juvenil / Dama</td></tr>
-                    <tr><td><strong>38</strong></td><td>24.5 cm</td><td>Adulto</td></tr>
-                    <tr><td><strong>39</strong></td><td>25.2 cm</td><td>Adulto</td></tr>
-                    <tr><td><strong>40</strong></td><td>26.0 cm</td><td>Adulto</td></tr>
-                    <tr><td><strong>41</strong></td><td>26.7 cm</td><td>Adulto</td></tr>
-                    <tr><td><strong>42</strong></td><td>27.3 cm</td><td>Adulto</td></tr>
-                    <tr><td><strong>43</strong></td><td>28.0 cm</td><td>Adulto</td></tr>
-                    <tr><td><strong>44</strong></td><td>28.8 cm</td><td>Adulto</td></tr>
-                </tbody>
-            </table>
-
-            <div class="how-to-measure">
-                <h5><i class="fas fa-shoe-prints"></i> ¿Cómo medir tu pie correctamente?</h5>
-                <p>1. Apoya tu pie sobre una hoja de papel pegada al suelo y junto a una pared.<br>
-                   2. Marca el punto más largo de tu dedo pulgar.<br>
-                   3. Mide con una regla la distancia en centímetros desde la pared hasta la marca y ubica tu talla arriba.</p>
-            </div>
+            <img src="Logos/guia_tallas.jpg" alt="Guía de Tallas SPEEDY WAY" style="width: 100%; height: auto; border-radius: 12px; margin-top: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
         </div>
     </div>
 
@@ -1948,6 +1921,9 @@
                         <p class="catalog-card-desc">${product.description || ''}</p>
                         <div class="catalog-card-sizes">${sizeTags}</div>
                         <div class="catalog-card-actions">
+                            <a href="javascript:void(0)" onclick="openSizeModal()" class="btn-catalog-size" style="width: 100%; background: #F8FAFC; color: var(--color-navy); padding: 12px; border-radius: 12px; font-weight: 700; text-align: center; display: block; margin-bottom: 10px; text-decoration: none; border: 1px solid #E2E8F0; font-size: 0.9rem; transition: all 0.2s;">
+                                <i class="fas fa-ruler-combined"></i> Guía de Tallas
+                            </a>
                             <a href="javascript:void(0)" onclick="orderProductWA('${product.title.replace(/'/g, "\\'")}'  , '${(product.reference || '').replace(/'/g, "\\'")}')" class="btn-catalog-wa" ${!isAvailable ? 'style="opacity:0.5;pointer-events:none"' : ''}>
                                 <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
                             </a>
