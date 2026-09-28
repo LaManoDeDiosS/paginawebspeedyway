@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPEEDY WAY ® | Mocasines Náuticos 100% Cuero Genuino</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --color-navy-dark: #030F26;
+            --color-navy: #0A3190;
+            --color-navy-light: #1643B8;
+            --color-navy-card: #081B44;
+            --color-neon: #E5F800;
+            --color-neon-hover: #cbe000;
+            --color-leather: #783C19;
+            --color-bg-light: #F4F7FC;
+            --color-white: #FFFFFF;
+            --color-text-dark: #0F172A;
+            --color-text-muted: #64748B;
+            --shadow-card: 0 20px 40px rgba(10, 49, 144, 0.08);
+            --shadow-hover: 0 25px 50px rgba(10, 49, 144, 0.16);
+            --font-serif: 'Cormorant Garamond', Georgia, serif;
+            --font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--color-bg-light);
+            color: var(--color-text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Top Announcement Bar */
+        .announcement-bar {
+            background-color: var(--color-navy-dark);
+            color: var(--color-neon);
+            text-align: center;
+            padding: 10px 16px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            border-bottom: 1px solid rgba(229, 248, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .announcement-bar span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Back to selector pill */
+        .back-hub-link {
+            background: rgba(255, 255, 255, 0.1);
+            color: #FFFFFF;
+            padding: 4px 12px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 0.75rem;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            margin-left: 8px;
+        }
+        .back-hub-link:hover {
+            background: var(--color-neon);
+            color: var(--color-navy-dark);
+        }
+
+        /* Navigation Header */
+        header {
+            background: rgba(3, 15, 38, 0.95);
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+            border-bottom: 2px solid rgba(229, 248, 0, 0.4);
+        }
+
+        .nav-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 24px;
+        }
+
+        .logo-box {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-box img {
+            height: 46px;
+            width: auto;
+            display: block;
+            filter: drop-shadow(0 2px 8px rgba(0,0,0,0.4));
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--color-white);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 4px 0;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--color-neon);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--color-neon);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .social-nav-icons {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .social-nav-icons a {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: var(--color-white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .social-nav-icons a:hover {
+            background: var(--color-neon);
+            color: var(--color-navy-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(229, 248, 0, 0.3);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background: radial-gradient(circle at 75% 30%, #11285A 0%, var(--color-navy-dark) 70%);
+            color: var(--color-white);
+            padding: 90px 24px 110px;
+            overflow: hidden;
+        }
+
+        /* Subtle clean marine ambiance lines (NO text overlays) */
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+            background: radial-gradient(circle at 20% 80%, rgba(10, 49, 144, 0.4) 0%, transparent 60%),
+                        radial-gradient(circle at 80% 20%, rgba(229, 248, 0, 0.06) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            max-width: 1280px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1.15fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .hero-tagline {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(229, 248, 0, 0.12);
+            color: var(--color-neon);
+            border: 1px solid rgba(229, 248, 0, 0.35);
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .hero-text h1 {
+            font-family: var(--font-serif);
+            font-size: 4.2rem;
+            line-height: 1.05;
+            margin-bottom: 22px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .hero-text h1 span {
+            color: var(--color-neon);
+            display: block;
+            font-style: italic;
+        }
+
+        .hero-text p {
+            font-size: 1.15rem;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 34px;
+            max-width: 540px;
+            line-height: 1.7;
+        }
+
+        .hero-badges {
+            display: flex;
+            gap: 14px;
+            margin-bottom: 38px;
+            flex-wrap: wrap;
+        }
+
+        .badge-pill {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #F1F5F9;
+        }
+
+        .badge-pill i {
+            color: var(--color-neon);
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 18px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-cta-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background-color: var(--color-neon);
+            color: var(--color-navy-dark);
+            padding: 16px 36px;
+            border-radius: 40px;
+            font-weight: 800;
+            font-size: 1.05rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(229, 248, 0, 0.3);
+        }
+
+        .btn-cta-primary:hover {
+            background-color: var(--color-white);
+            color: var(--color-navy);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-cta-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: transparent;
+            color: var(--color-white);
+            padding: 15px 28px;
+            border-radius: 40px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-decoration: none;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .btn-cta-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--color-neon);
+            color: var(--color-neon);
+        }
+
+        /* Hero Image Container */
+        .hero-showcase {
+            position: relative;
+        }
+
+        .hero-card-frame {
+            background: linear-gradient(145deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 32px;
+            padding: 24px;
+            backdrop-filter: blur(16px);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5), 0 0 40px rgba(10, 49, 144, 0.3);
+            position: relative;
+        }
+
+        .hero-card-frame img {
+            width: 100%;
+            display: block;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .hero-card-frame:hover img {
+            transform: scale(1.02);
+        }
+
+        .floating-badge {
+            position: absolute;
+            background: rgba(3, 15, 38, 0.9);
+            border: 1px solid rgba(229, 248, 0, 0.4);
+            color: #FFFFFF;
+            padding: 12px 18px;
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .floating-badge.badge-top {
+            top: -16px;
+            right: -16px;
+        }
+
+        .floating-badge.badge-bottom {
+            bottom: -16px;
+            left: -16px;
+        }
+
+        .floating-badge i {
+            font-size: 1.5rem;
+            color: var(--color-neon);
+        }
+
+        .floating-badge .badge-text h4 {
+            font-size: 0.9rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .floating-badge .badge-text p {
+            font-size: 0.75rem;
+            color: #94A3B8;
+            margin: 0;
+        }
+
+        /* Section Titles */
+        .section-header {
+            text-align: center;
+            max-width: 760px;
+            margin: 90px auto 50px;
+            padding: 0 24px;
+        }
+
+        .section-tag {
+            color: var(--color-navy);
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            font-size: 0.85rem;
+            display: inline-block;
+            margin-bottom: 10px;
+            background: rgba(10, 49, 144, 0.08);
+            padding: 4px 14px;
+            border-radius: 20px;
+        }
+
+        .section-title {
+            font-family: var(--font-serif);
+            font-size: 3.2rem;
+            color: var(--color-navy-dark);
+            margin-bottom: 16px;
+            line-height: 1.15;
+        }
+
+        .section-subtitle {
+            color: var(--color-text-muted);
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        /* FLAGSHIP PRODUCT SHOWCASE EXPERIENCE */
+        .flagship-container {
+            max-width: 1280px;
+            margin: 0 auto 90px;
+            padding: 0 24px;
+        }
+
+        .flagship-card {
+            background: var(--color-white);
+            border-radius: 36px;
+            box-shadow: 0 25px 60px rgba(10, 49, 144, 0.08);
+            border: 1px solid rgba(10, 49, 144, 0.08);
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 0;
+        }
+
+        /* Left Side: Interactive Gallery */
+        .product-gallery-side {
+            background: #F8FAFC;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-right: 1px solid rgba(10, 49, 144, 0.06);
+            position: relative;
+        }
+
+        .gallery-main-view {
+            position: relative;
+            border-radius: 24px;
+            overflow: hidden;
+            background: #FFFFFF;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+            height: 480px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .gallery-main-view img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            transition: all 0.4s ease;
+        }
+
+        .gallery-main-view:hover img {
+            transform: scale(1.04);
+        }
+
+        .view-pill-badge {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: var(--color-navy-dark);
+            color: var(--color-neon);
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding: 6px 14px;
+            border-radius: 20px;
+            text-transform: uppercase;
+        }
+
+        .gallery-thumbnails {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 14px;
+            margin-top: 20px;
+        }
+
+        .thumb-btn {
+            background: #FFFFFF;
+            border: 2px solid transparent;
+            border-radius: 16px;
+            padding: 6px;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+            height: 85px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .thumb-btn img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .thumb-btn:hover {
+            border-color: var(--color-navy-light);
+            transform: translateY(-2px);
+        }
+
+        .thumb-btn.active {
+            border-color: var(--color-navy);
+            box-shadow: 0 6px 18px rgba(10, 49, 144, 0.2);
+            transform: scale(1.02);
+        }
+
+        /* Right Side: Product Details & Purchase Engine */
+        .product-purchase-side {
+            padding: 50px 45px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-meta-header {
+            margin-bottom: 24px;
+        }
+
+        .brand-eyebrow {
+            font-size: 0.8rem;
+            font-weight: 800;
+            color: var(--color-navy-light);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .product-title-luxury {
+            font-family: var(--font-serif);
+            font-size: 2.8rem;
+            color: var(--color-navy-dark);
+            line-height: 1.1;
+            margin-bottom: 12px;
+        }
+
+        .product-specs-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 24px;
+        }
+
+        .spec-chip {
+            background: #F1F5F9;
+            color: var(--color-text-dark);
+            font-size: 0.82rem;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 8px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            border: 1px solid #E2E8F0;
+        }
+
+        .spec-chip i {
+            color: var(--color-navy);
+        }
+
+        .product-desc-lead {
+            color: #475569;
+            font-size: 0.98rem;
+            line-height: 1.7;
+            margin-bottom: 28px;
+        }
+
+        /* Size Selection Architecture */
+        .size-selection-block {
+            background: #F8FAFC;
+            border: 1px solid #E2E8F0;
+            border-radius: 20px;
+            padding: 22px;
+            margin-bottom: 30px;
+        }
+
+        .size-header-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .size-header-title {
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--color-text-dark);
+        }
+
+        .size-guide-trigger {
+            background: none;
+            border: none;
+            color: var(--color-navy);
+            font-size: 0.85rem;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: underline;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            transition: color 0.2s;
+        }
+
+        .size-guide-trigger:hover {
+            color: var(--color-navy-light);
+        }
+
+        .size-range-selector {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 14px;
+        }
+
+        .range-tab {
+            flex: 1;
+            padding: 8px;
+            border-radius: 8px;
+            background: #EDF2F7;
+            border: 1px solid #CBD5E1;
+            font-size: 0.8rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-align: center;
+        }
+
+        .range-tab.active {
+            background: var(--color-navy-dark);
+            color: var(--color-neon);
+            border-color: var(--color-navy-dark);
+        }
+
+        .sizes-grid-dynamic {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 8px;
+        }
+
+        .size-chip-btn {
+            background: #FFFFFF;
+            border: 1.5px solid #CBD5E1;
+            color: var(--color-text-dark);
+            padding: 10px 0;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+        }
+
+        .size-chip-btn:hover {
+            border-color: var(--color-navy);
+            color: var(--color-navy);
+            transform: translateY(-2px);
+        }
+
+        .size-chip-btn.active {
+            background: var(--color-navy);
+            color: #FFFFFF;
+            border-color: var(--color-navy);
+            box-shadow: 0 4px 12px rgba(10, 49, 144, 0.3);
+        }
+
+        /* Order Summary & WhatsApp CTA */
+        .order-action-box {
+            margin-top: auto;
+        }
+
+        .order-summary-pill {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 16px;
+            background: #EFF6FF;
+            border-radius: 12px;
+            border: 1px solid #DBEAFE;
+            margin-bottom: 16px;
+            font-size: 0.88rem;
+        }
+
+        .order-summary-pill strong {
+            color: var(--color-navy);
+        }
+
+        .btn-order-wa {
+            width: 100%;
+            background: #25D366;
+            color: #FFFFFF;
+            border: none;
+            padding: 18px 24px;
+            border-radius: 18px;
+            font-weight: 800;
+            font-size: 1.05rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-order-wa:hover {
+            background: #1eb957;
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(37, 211, 102, 0.4);
+        }
+
+        .btn-order-wa i {
+            font-size: 1.4rem;
+        }
+
+        .guarantee-microtext {
+            text-align: center;
+            font-size: 0.78rem;
+            color: #64748B;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        /* CRAFTSMANSHIP & MATERIALS SECTION */
+        .craft-section {
+            background: var(--color-navy-dark);
+            color: var(--color-white);
+            padding: 90px 24px;
+            position: relative;
+        }
+
+        .craft-grid {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+
+        .craft-card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .craft-card:hover {
+            border-color: rgba(229, 248, 0, 0.4);
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        .craft-img {
+            height: 240px;
+            overflow: hidden;
+        }
+
+        .craft-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .craft-card:hover .craft-img img {
+            transform: scale(1.08);
+        }
+
+        .craft-content {
+            padding: 28px;
+        }
+
+        .craft-content h3 {
+            font-family: var(--font-serif);
+            font-size: 1.8rem;
+            margin-bottom: 12px;
+            color: #FFFFFF;
+        }
+
+        .craft-content p {
+            color: #94A3B8;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* CAMPAIGN & SOCIAL MEDIA GALLERY (Proper display of flyers) */
+        .campaign-section {
+            padding: 90px 24px;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .campaign-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+
+        .campaign-card {
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: var(--shadow-card);
+            border: 1px solid rgba(10, 49, 144, 0.08);
+            transition: all 0.4s ease;
+            position: relative;
+            background: #FFFFFF;
+        }
+
+        .campaign-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .campaign-card img {
+            width: 100%;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .campaign-card:hover img {
+            transform: scale(1.03);
+        }
+
+        .campaign-info {
+            padding: 20px;
+            background: #FFFFFF;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .campaign-info h4 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--color-navy-dark);
+        }
+
+        .campaign-info span {
+            font-size: 0.8rem;
+            color: var(--color-navy);
+            font-weight: 600;
+        }
+
+        /* Guía de Tallas Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(3, 15, 38, 0.85);
+            backdrop-filter: blur(8px);
+            z-index: 2000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .modal-overlay.open {
+            display: flex;
+        }
+
+        .modal-box {
+            background: #FFFFFF;
+            border-radius: 28px;
+            max-width: 680px;
+            width: 100%;
+            padding: 40px;
+            position: relative;
+            box-shadow: 0 25px 60px rgba(0,0,0,0.4);
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        .modal-close-btn {
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            background: #F1F5F9;
+            border: none;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #475569;
+            transition: all 0.2s;
+        }
+
+        .modal-close-btn:hover {
+            background: #E2E8F0;
+            color: #000;
+        }
+
+        .modal-title {
+            font-family: var(--font-serif);
+            font-size: 2.2rem;
+            color: var(--color-navy-dark);
+            margin-bottom: 8px;
+        }
+
+        .modal-desc {
+            color: #64748B;
+            font-size: 0.95rem;
+            margin-bottom: 24px;
+        }
+
+        .size-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 24px;
+        }
+
+        .size-table th {
+            background: var(--color-navy);
+            color: #FFFFFF;
+            padding: 12px;
+            font-size: 0.85rem;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .size-table th:first-child {
+            border-top-left-radius: 12px;
+        }
+
+        .size-table th:last-child {
+            border-top-right-radius: 12px;
+        }
+
+        .size-table td {
+            padding: 10px 12px;
+            text-align: center;
+            font-size: 0.88rem;
+            border-bottom: 1px solid #E2E8F0;
+        }
+
+        .size-table tr:nth-child(even) td {
+            background: #F8FAFC;
+        }
+
+        .how-to-measure {
+            background: #EFF6FF;
+            border-radius: 16px;
+            padding: 18px;
+            border-left: 4px solid var(--color-navy);
+            font-size: 0.88rem;
+            color: #1E3A8A;
+        }
+
+        .how-to-measure h5 {
+            font-weight: 700;
+            margin-bottom: 6px;
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #020B1E;
+            color: var(--color-white);
+            padding: 70px 24px 35px;
+            border-top: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .footer-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand img {
+            height: 44px;
+            margin-bottom: 18px;
+        }
+
+        .footer-brand p {
+            color: rgba(255, 255, 255, 0.7);
+            max-width: 380px;
+            font-size: 0.92rem;
+            line-height: 1.7;
+        }
+
+        .footer-col h4 {
+            font-size: 1.05rem;
+            color: var(--color-neon);
+            margin-bottom: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-col ul li a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--color-neon);
+            transform: translateX(4px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.85rem;
+        }
+
+        /* Floating WhatsApp Button */
+        .floating-wa {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            background: #25D366;
+            color: white;
+            width: 62px;
+            height: 62px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+            text-decoration: none;
+            z-index: 999;
+            transition: all 0.3s ease;
+        }
+
+        .floating-wa:hover {
+            transform: scale(1.1) translateY(-4px);
+            background: #1eb957;
+            box-shadow: 0 15px 35px rgba(37, 211, 102, 0.5);
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 1024px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .hero-text h1 {
+                font-size: 3.4rem;
+            }
+            .hero-text p {
+                margin: 0 auto 30px;
+            }
+            .hero-badges {
+                justify-content: center;
+            }
+            .hero-actions {
+                justify-content: center;
+            }
+            .flagship-card {
+                grid-template-columns: 1fr;
+            }
+            .product-gallery-side {
+                border-right: none;
+                border-bottom: 1px solid rgba(10, 49, 144, 0.06);
+            }
+            .craft-grid, .campaign-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+            .sizes-grid-dynamic {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            .product-purchase-side {
+                padding: 30px 20px;
+            }
+            .product-gallery-side {
+                padding: 20px;
+            }
+            .gallery-main-view {
+                height: 320px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        <span>⚡ ENVÍOS A TODA COLOMBIA</span>
+        <span>• CALZADO 100% EN CUERO LEGÍTIMO</span>
+        <span>• TALLAS 27 A LA 44 DISPONIBLES</span>
+        
+    </div>
+
+    <!-- Navigation Header -->
+    <header>
+        <div class="nav-container">
+            <div class="logo-box">
+                <a href="#inicio">
+                    <img src="Logos/logo-speedy.svg" alt="SPEEDY WAY ®">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#producto">Mocasín Sheraton</a></li>
+                <li><a href="#artesania">Artesanía</a></li>
+                <li><a href="#campana">Campaña</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="social-nav-icons">
+                <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="javascript:void(0)" onclick="orderWhatsApp()" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-tagline">
+                    <i class="fas fa-anchor"></i> Colección Náutica de Lujo
+                </div>
+                <h1>Elegancia que <span>marca tu camino</span></h1>
+                <p>Versatilidad, confort anatómico y máxima distinción en cada paso. Mocasines náuticos elaborados 100% en cuero genuino con suela antideslizante para tus mejores destinos.</p>
+                
+                <div class="hero-badges">
+                    <div class="badge-pill"><i class="fas fa-feather-alt"></i> Ligero & Flexible</div>
+                    <div class="badge-pill"><i class="fas fa-shield-alt"></i> Cuero Genuino</div>
+                    <div class="badge-pill"><i class="fas fa-shoe-prints"></i> Tallas 27 a 44</div>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="#producto" class="btn-cta-primary">
+                        <i class="fas fa-shopping-bag"></i> Configurar Pedido
+                    </a>
+                    <a href="#artesania" class="btn-cta-secondary">
+                        <i class="fas fa-compass"></i> Descubrir Detalles
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hero Image Frame with Clean Studio Asset -->
+            <div class="hero-showcase">
+                <div class="hero-card-frame">
+                    <img id="hero-img" src="Logos/product-sheraton-main.jpg" alt="Mocasín Náutico Sheraton Coñac Ref. 3000">
+                    
+                    <div class="floating-badge badge-top">
+                        <i class="fas fa-gem"></i>
+                        <div class="badge-text">
+                            <h4>Sheraton Coñac</h4>
+                            <p>Ref. 3000 • Suela Café</p>
+                        </div>
+                    </div>
+
+                    <div class="floating-badge badge-bottom">
+                        <i class="fas fa-check-circle"></i>
+                        <div class="badge-text">
+                            <h4>100% Cuero Vacuno</h4>
+                            <p>Costuras artesanales a mano</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flagship Product Experience Section -->
+    <section id="producto">
+        <div class="section-header">
+            <span class="section-tag">Producto Estrella</span>
+            <h2 class="section-title">Sheraton Coñac Ref. 3000</h2>
+            <p class="section-subtitle">El mocasín náutico clásico que define la presencia y distinción del hombre moderno. Selecciona tu talla exacta y confirma tu orden directa a WhatsApp.</p>
+        </div>
+
+        <div class="flagship-container">
+            <div class="flagship-card">
+                
+                <!-- Left: Interactive Gallery -->
+                <div class="product-gallery-side">
+                    <div class="gallery-main-view">
+                        <span class="view-pill-badge" id="view-pill">Vista 3/4 Estudio</span>
+                        <img id="main-product-img" src="Logos/product-sheraton-main.jpg" alt="Mocasín Náutico Sheraton Coñac">
+                    </div>
+
+                    <div class="gallery-thumbnails">
+                        <button class="thumb-btn active" onclick="changeProductView('Logos/product-sheraton-main.jpg', 'Vista 3/4 Estudio', this)">
+                            <img src="Logos/product-sheraton-main.jpg" alt="Vista 3/4">
+                        </button>
+                        <button class="thumb-btn" onclick="changeProductView('Logos/product-sheraton-detail.jpg', 'Costuras Artesanales', this)">
+                            <img src="Logos/product-sheraton-detail.jpg" alt="Detalle Costuras">
+                        </button>
+                        <button class="thumb-btn" onclick="changeProductView('Logos/product-sheraton-side.jpg', 'Suela y Perfil Náutico', this)">
+                            <img src="Logos/product-sheraton-side.jpg" alt="Suela Náutica">
+                        </button>
+                        <button class="thumb-btn" onclick="changeProductView('Logos/lifestyle-yacht.jpg', 'Estilo en Yate', this)">
+                            <img src="Logos/lifestyle-yacht.jpg" alt="En Yate">
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right: Purchase Engine -->
+                <div class="product-purchase-side">
+                    <div class="product-meta-header">
+                        <span class="brand-eyebrow">SPEEDY WAY ® • EDICIÓN NÁUTICA</span>
+                        <h3 class="product-title-luxury">Mocasín Sheraton Coñac</h3>
+                        
+                        <div class="product-specs-list">
+                            <span class="spec-chip"><i class="fas fa-tag"></i> Ref. 3000</span>
+                            <span class="spec-chip"><i class="fas fa-palette"></i> Cuero Coñac & Suela Café</span>
+                            <span class="spec-chip"><i class="fas fa-feather"></i> Plantilla Confort Azul</span>
+                            <span class="spec-chip"><i class="fas fa-check"></i> Stock Disponible</span>
+                        </div>
+
+                        <p class="product-desc-lead">
+                            Fabricado artesanalmente en cuero genuino seleccionado. Cuenta con sistema de ajuste perimetral 360° en cuero crudo, ojetes de latón antioxidante y suela náutica con ranuras que evacúan el agua para un agarre insuperable en cualquier superficie.
+                        </p>
+                    </div>
+
+                    <!-- Size Selector Block -->
+                    <div class="size-selection-block">
+                        <div class="size-header-row">
+                            <span class="size-header-title"><i class="fas fa-ruler-horizontal"></i> Selecciona tu Talla:</span>
+                            <button class="size-guide-trigger" onclick="openSizeModal()">
+                                <i class="fas fa-question-circle"></i> ¿Cuál es mi talla exacta?
+                            </button>
+                        </div>
+
+                        <!-- Segment Tab: Adulto vs Juvenil -->
+                        <div class="size-range-selector">
+                            <button class="range-tab active" id="tab-adulto" onclick="switchSizeRange('adulto')">Tallas Adulto (38 - 44)</button>
+                            <button class="range-tab" id="tab-juvenil" onclick="switchSizeRange('juvenil')">Tallas Juvenil (27 - 37)</button>
+                        </div>
+
+                        <!-- Sizes Grid -->
+                        <div class="sizes-grid-dynamic" id="sizes-container">
+                            <!-- Populated dynamically -->
+                        </div>
+                    </div>
+
+                    <!-- Order Action Box -->
+                    <div class="order-action-box">
+                        <div class="order-summary-pill">
+                            <span>Modelo: <strong>Sheraton Coñac Ref. 3000</strong></span>
+                            <span>Talla elegida: <strong id="summary-size-display">40</strong></span>
+                        </div>
+
+                        <a href="javascript:void(0)" onclick="orderWhatsApp()" class="btn-order-wa">
+                            <i class="fab fa-whatsapp"></i> Pedir por WhatsApp Ahora
+                        </a>
+
+                        <div class="guarantee-microtext">
+                            <i class="fas fa-shield-alt"></i> Envío asegurado a todo el país • Pago seguro • Atención personalizada
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Craftsmanship & Quality Section -->
+    <section class="craft-section" id="artesania">
+        <div class="section-header" style="color: #FFFFFF; margin-top: 0;">
+            <span class="section-tag" style="background: rgba(229, 248, 0, 0.15); color: var(--color-neon);">Materiales & Confección</span>
+            <h2 class="section-title" style="color: #FFFFFF;">El Arte del Calzado Náutico</h2>
+            <p class="section-subtitle" style="color: #94A3B8;">Cada par SPEEDY WAY ® conjuga décadas de tradición zapatera con tecnologías modernas de confort para crear piezas que perduran en el tiempo.</p>
+        </div>
+
+        <div class="craft-grid">
+            <div class="craft-card">
+                <div class="craft-img">
+                    <img src="Logos/product-sheraton-detail.jpg" alt="Cuero Genuino y Costura a Mano">
+                </div>
+                <div class="craft-content">
+                    <h3>Cuero Vacuno Seleccionado</h3>
+                    <p>Piel curtida que madura con distinción y gana carácter con el uso. Suavidad inmediata sin rozaduras desde el primer día.</p>
+                </div>
+            </div>
+
+            <div class="craft-card">
+                <div class="craft-img">
+                    <img src="Logos/product-sheraton-side.jpg" alt="Suela de Agarre Náutico">
+                </div>
+                <div class="craft-content">
+                    <h3>Suela Náutica Antideslizante</h3>
+                    <p>Diseño estriado que canaliza el agua y se aferra con firmeza a cubiertas húmedas, adoquines y pisos pulidos.</p>
+                </div>
+            </div>
+
+            <div class="craft-card">
+                <div class="craft-img">
+                    <img src="Logos/lifestyle-yacht.jpg" alt="Estilo Atemporal">
+                </div>
+                <div class="craft-content">
+                    <h3>Versatilidad Absoluta</h3>
+                    <p>Combina a la perfección con bermudas, lino, pantalones chinos o denim. Diseñados para caminatas urbanas y paseos marítimos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Official Campaign Gallery (Properly exhibiting the full flyers) -->
+    <section class="campaign-section" id="campana">
+        <div class="section-header">
+            <span class="section-tag">Campaña Oficial</span>
+            <h2 class="section-title">Nuestra Imagen de Marca</h2>
+            <p class="section-subtitle">Visualiza los afiches y piezas oficiales de lanzamiento de SPEEDY WAY ® con presencia nacional.</p>
+        </div>
+
+        <div class="campaign-grid">
+            <div class="campaign-card">
+                <img src="Logos/Speed1.png" alt="Campaña Estilo Náutico">
+                <div class="campaign-info">
+                    <h4>Campaña "Estilo Náutico con Presencia"</h4>
+                    <span>Sheraton Coñac</span>
+                </div>
+            </div>
+
+            <div class="campaign-card">
+                <img src="Logos/Speed2.png" alt="Campaña Elegancia en tu Camino">
+                <div class="campaign-info">
+                    <h4>Campaña "Elegancia que Marca tu Camino"</h4>
+                    <span>Edición Confort</span>
+                </div>
+            </div>
+
+            <div class="campaign-card">
+                <img src="Logos/Speed3.png" alt="Campaña Pasos que te Llevan Más Lejos">
+                <div class="campaign-info">
+                    <h4>Campaña "Pasos que te Llevan Más Lejos"</h4>
+                    <span>Horizonte Marino</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Size Guide Modal -->
+    <div class="modal-overlay" id="size-modal" onclick="closeSizeModalOnOutside(event)">
+        <div class="modal-box">
+            <button class="modal-close-btn" onclick="closeSizeModal()"><i class="fas fa-times"></i></button>
+            <h3 class="modal-title">Guía de Tallas SPEEDY WAY ®</h3>
+            <p class="modal-desc">Nuestras hormas son estándar para calzado de cuero colombiano. Te recomendamos medir la longitud de tu pie descalzo en centímetros:</p>
+            
+            <table class="size-table">
+                <thead>
+                    <tr>
+                        <th>Talla (Colombia/EU)</th>
+                        <th>Largo del Pie (cm)</th>
+                        <th>Segmento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>27 - 30</strong></td><td>17.0 - 19.0 cm</td><td>Niño / Juvenil</td></tr>
+                    <tr><td><strong>31 - 34</strong></td><td>19.5 - 21.5 cm</td><td>Juvenil</td></tr>
+                    <tr><td><strong>35 - 37</strong></td><td>22.0 - 23.5 cm</td><td>Juvenil / Dama</td></tr>
+                    <tr><td><strong>38</strong></td><td>24.5 cm</td><td>Adulto</td></tr>
+                    <tr><td><strong>39</strong></td><td>25.2 cm</td><td>Adulto</td></tr>
+                    <tr><td><strong>40</strong></td><td>26.0 cm</td><td>Adulto</td></tr>
+                    <tr><td><strong>41</strong></td><td>26.7 cm</td><td>Adulto</td></tr>
+                    <tr><td><strong>42</strong></td><td>27.3 cm</td><td>Adulto</td></tr>
+                    <tr><td><strong>43</strong></td><td>28.0 cm</td><td>Adulto</td></tr>
+                    <tr><td><strong>44</strong></td><td>28.8 cm</td><td>Adulto</td></tr>
+                </tbody>
+            </table>
+
+            <div class="how-to-measure">
+                <h5><i class="fas fa-shoe-prints"></i> ¿Cómo medir tu pie correctamente?</h5>
+                <p>1. Apoya tu pie sobre una hoja de papel pegada al suelo y junto a una pared.<br>
+                   2. Marca el punto más largo de tu dedo pulgar.<br>
+                   3. Mide con una regla la distancia en centímetros desde la pared hasta la marca y ubica tu talla arriba.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="Logos/logo-speedy.svg" alt="SPEEDY WAY Logo">
+                <p>Marca líder en calzado náutico y casual de cuero 100% genuino. Calzado diseñado para brindar distinción, durabilidad y máxima presencia en cada paso.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Nuestras Redes</h4>
+                <ul>
+                    <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook Oficial</a></li>
+                    <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram Oficial</a></li>
+                    <li><a href="javascript:void(0)" onclick="orderWhatsApp()"><i class="fab fa-whatsapp"></i> WhatsApp Ventas Directas</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Atención al Cliente</h4>
+                <ul>
+                    <li><a href="javascript:void(0)" onclick="openSizeModal()"><i class="fas fa-ruler"></i> Tabla de Medidas y Tallas</a></li>
+                    <li><a href="#producto"><i class="fas fa-shopping-bag"></i> Mocasín Sheraton Coñac</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 SPEEDY WAY ® - Todos los derechos reservados. Camina tu mejor versión.
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="javascript:void(0)" onclick="orderWhatsApp()" class="floating-wa" title="Pedir por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Interactivity Engine -->
+    <script>
+        let currentSelectedSize = '40';
+        let currentRange = 'adulto';
+
+        const sizesData = {
+            adulto: ['38', '39', '40', '41', '42', '43', '44'],
+            juvenil: ['27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37']
+        };
+
+        function renderSizes() {
+            const container = document.getElementById('sizes-container');
+            container.innerHTML = '';
+            const list = sizesData[currentRange];
+            
+            list.forEach(size => {
+                const btn = document.createElement('button');
+                btn.className = `size-chip-btn ${size === currentSelectedSize ? 'active' : ''}`;
+                btn.innerText = size;
+                btn.onclick = () => selectSize(size);
+                container.appendChild(btn);
+            });
+        }
+
+        function switchSizeRange(range) {
+            currentRange = range;
+            document.getElementById('tab-adulto').classList.toggle('active', range === 'adulto');
+            document.getElementById('tab-juvenil').classList.toggle('active', range === 'juvenil');
+            
+            // Set default size for the range if current not in range
+            if (!sizesData[range].includes(currentSelectedSize)) {
+                currentSelectedSize = sizesData[range][0];
+                updateSizeSummary();
+            }
+            renderSizes();
+        }
+
+        function selectSize(size) {
+            currentSelectedSize = size;
+            updateSizeSummary();
+            renderSizes();
+        }
+
+        function updateSizeSummary() {
+            document.getElementById('summary-size-display').innerText = currentSelectedSize;
+        }
+
+        function changeProductView(imgSrc, viewTitle, btnElement) {
+            const mainImg = document.getElementById('main-product-img');
+            const pill = document.getElementById('view-pill');
+            
+            mainImg.style.opacity = '0.3';
+            setTimeout(() => {
+                mainImg.src = imgSrc;
+                pill.innerText = viewTitle;
+                mainImg.style.opacity = '1';
+            }, 150);
+
+            document.querySelectorAll('.thumb-btn').forEach(b => b.classList.remove('active'));
+            if (btnElement) btnElement.classList.add('active');
+        }
+
+        function openSizeModal() {
+            document.getElementById('size-modal').classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeSizeModal() {
+            document.getElementById('size-modal').classList.remove('open');
+            document.body.style.overflow = 'auto';
+        }
+
+        function closeSizeModalOnOutside(e) {
+            if (e.target.id === 'size-modal') {
+                closeSizeModal();
+            }
+        }
+
+        function orderWhatsApp() {
+            const phone = "573000000000";
+            const message = `Hola SPEEDY WAY ⚓, deseo realizar el pedido del calzado:\n\n👞 Modelo: Mocasín Náutico Sheraton Coñac\n📋 Referencia: Ref. 3000\n📏 Talla seleccionada: ${currentSelectedSize}\n✨ Material: 100% Cuero Genuino (Suela Café)\n\n¿Me confirman disponibilidad y costo de envío a mi ciudad? Muchas gracias.`;
+            const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+            window.open(url, '_blank');
+        }
+
+        // Initialize on load
+        document.addEventListener('DOMContentLoaded', () => {
+            renderSizes();
+        });
+    </script>
+</body>
+</html>
