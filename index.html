@@ -1094,6 +1094,269 @@
             box-shadow: 0 15px 35px rgba(37, 211, 102, 0.5);
         }
 
+        /* ═══════════ CATALOG GRID SECTION ═══════════ */
+        .catalog-section {
+            padding: 90px 24px;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .catalog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 28px;
+        }
+
+        .catalog-card {
+            background: var(--color-white);
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: var(--shadow-card);
+            border: 1px solid rgba(10, 49, 144, 0.06);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .catalog-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+            border-color: rgba(10, 49, 144, 0.15);
+        }
+
+        .catalog-card-img {
+            position: relative;
+            height: 280px;
+            overflow: hidden;
+            background: #F8FAFC;
+        }
+
+        .catalog-card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .catalog-card:hover .catalog-card-img img {
+            transform: scale(1.06);
+        }
+
+        .catalog-badge-featured {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            background: var(--color-neon);
+            color: var(--color-navy-dark);
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            padding: 5px 12px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            box-shadow: 0 4px 12px rgba(229, 248, 0, 0.4);
+        }
+
+        .catalog-badge-stock {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: rgba(3, 15, 38, 0.8);
+            backdrop-filter: blur(8px);
+            color: #4ADE80;
+            font-size: 0.72rem;
+            font-weight: 700;
+            padding: 5px 12px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .catalog-badge-stock.out-of-stock {
+            color: #F87171;
+        }
+
+        .catalog-card-body {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .catalog-card-ref {
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: var(--color-navy-light);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 6px;
+        }
+
+        .catalog-card-title {
+            font-family: var(--font-serif);
+            font-size: 1.6rem;
+            color: var(--color-navy-dark);
+            line-height: 1.15;
+            margin-bottom: 8px;
+        }
+
+        .catalog-card-price {
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: var(--color-navy);
+            margin-bottom: 12px;
+        }
+
+        .catalog-card-desc {
+            color: #64748B;
+            font-size: 0.88rem;
+            line-height: 1.6;
+            margin-bottom: 16px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .catalog-card-color {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.82rem;
+            color: #475569;
+            font-weight: 600;
+            margin-bottom: 14px;
+        }
+
+        .catalog-card-color i {
+            color: var(--color-leather);
+        }
+
+        .catalog-card-sizes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 18px;
+        }
+
+        .catalog-size-tag {
+            background: #F1F5F9;
+            color: var(--color-text-dark);
+            font-size: 0.78rem;
+            font-weight: 700;
+            padding: 5px 10px;
+            border-radius: 8px;
+            border: 1px solid #E2E8F0;
+            transition: all 0.2s;
+        }
+
+        .catalog-size-tag:hover {
+            border-color: var(--color-navy);
+            color: var(--color-navy);
+        }
+
+        .catalog-card-actions {
+            margin-top: auto;
+        }
+
+        .btn-catalog-wa {
+            width: 100%;
+            background: #25D366;
+            color: #FFFFFF;
+            border: none;
+            padding: 14px 20px;
+            border-radius: 14px;
+            font-weight: 700;
+            font-size: 0.92rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 6px 18px rgba(37, 211, 102, 0.25);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-catalog-wa:hover {
+            background: #1eb957;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.35);
+        }
+
+        .btn-catalog-wa i {
+            font-size: 1.2rem;
+        }
+
+        /* Catalog Loading Skeleton */
+        .catalog-skeleton {
+            background: var(--color-white);
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: var(--shadow-card);
+        }
+
+        .skeleton-img {
+            height: 280px;
+            background: linear-gradient(90deg, #F1F5F9 25%, #E2E8F0 50%, #F1F5F9 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s infinite;
+        }
+
+        .skeleton-body {
+            padding: 24px;
+        }
+
+        .skeleton-line {
+            height: 14px;
+            background: linear-gradient(90deg, #F1F5F9 25%, #E2E8F0 50%, #F1F5F9 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s infinite;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        .skeleton-line.short { width: 40%; }
+        .skeleton-line.medium { width: 65%; }
+        .skeleton-line.long { width: 90%; }
+        .skeleton-line.xl { height: 44px; width: 100%; margin-top: 16px; }
+
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+
+        .catalog-empty-state {
+            text-align: center;
+            padding: 60px 24px;
+            grid-column: 1 / -1;
+        }
+
+        .catalog-empty-state i {
+            font-size: 3rem;
+            color: #CBD5E1;
+            margin-bottom: 16px;
+        }
+
+        .catalog-empty-state h4 {
+            font-family: var(--font-serif);
+            font-size: 1.6rem;
+            color: var(--color-navy-dark);
+            margin-bottom: 8px;
+        }
+
+        .catalog-empty-state p {
+            color: #64748B;
+            font-size: 0.95rem;
+        }
+
         /* Responsive Breakpoints */
         @media (max-width: 1024px) {
             .hero-content {
@@ -1121,6 +1384,9 @@
             }
             .craft-grid, .campaign-grid {
                 grid-template-columns: 1fr;
+            }
+            .catalog-grid {
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             }
             .footer-container {
                 grid-template-columns: 1fr;
@@ -1166,6 +1432,7 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#producto">Mocasín Sheraton</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
                 <li><a href="#artesania">Artesanía</a></li>
                 <li><a href="#campana">Campaña</a></li>
                 <li><a href="#contacto">Contacto</a></li>
@@ -1320,6 +1587,46 @@
 
                 </div>
 
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ DYNAMIC CATALOG SECTION ═══════════ -->
+    <section class="catalog-section" id="catalogo">
+        <div class="section-header">
+            <span class="section-tag">Tienda Online</span>
+            <h2 class="section-title">Nuestro Catálogo</h2>
+            <p class="section-subtitle">Explora nuestra colección completa de calzado 100% cuero genuino. Cada modelo disponible para pedido directo por WhatsApp con envío a toda Colombia.</p>
+        </div>
+
+        <div class="catalog-grid" id="catalog-grid">
+            <!-- Loading Skeletons -->
+            <div class="catalog-skeleton">
+                <div class="skeleton-img"></div>
+                <div class="skeleton-body">
+                    <div class="skeleton-line short"></div>
+                    <div class="skeleton-line medium"></div>
+                    <div class="skeleton-line long"></div>
+                    <div class="skeleton-line xl"></div>
+                </div>
+            </div>
+            <div class="catalog-skeleton">
+                <div class="skeleton-img"></div>
+                <div class="skeleton-body">
+                    <div class="skeleton-line short"></div>
+                    <div class="skeleton-line medium"></div>
+                    <div class="skeleton-line long"></div>
+                    <div class="skeleton-line xl"></div>
+                </div>
+            </div>
+            <div class="catalog-skeleton">
+                <div class="skeleton-img"></div>
+                <div class="skeleton-body">
+                    <div class="skeleton-line short"></div>
+                    <div class="skeleton-line medium"></div>
+                    <div class="skeleton-line long"></div>
+                    <div class="skeleton-line xl"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -1557,10 +1864,122 @@
             window.open(url, '_blank');
         }
 
+        // ═══════════ CATALOG ENGINE ═══════════
+        const REPO_OWNER = 'LaManoDeDiosS';
+        const REPO_NAME = 'paginawebspeedyway';
+        const SHOES_PATH = 'content/shoes';
+        const PHONE_WA = '573000000000';
+
+        async function loadCatalog() {
+            const grid = document.getElementById('catalog-grid');
+            try {
+                // Fetch the list of JSON files from the content/shoes directory via GitHub API
+                const res = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${SHOES_PATH}`);
+                if (!res.ok) throw new Error('No products found');
+                const files = await res.json();
+                const jsonFiles = files.filter(f => f.name.endsWith('.json'));
+
+                if (jsonFiles.length === 0) {
+                    grid.innerHTML = `
+                        <div class="catalog-empty-state">
+                            <i class="fas fa-shoe-prints"></i>
+                            <h4>Próximamente</h4>
+                            <p>Estamos preparando nuevos modelos para ti. ¡Vuelve pronto!</p>
+                        </div>`;
+                    return;
+                }
+
+                // Fetch each product file
+                const products = await Promise.all(
+                    jsonFiles.map(async (file) => {
+                        const r = await fetch(file.download_url);
+                        return r.json();
+                    })
+                );
+
+                // Sort: featured first, then alphabetically
+                products.sort((a, b) => {
+                    if (a.featured && !b.featured) return -1;
+                    if (!a.featured && b.featured) return 1;
+                    return a.title.localeCompare(b.title);
+                });
+
+                // Render product cards
+                grid.innerHTML = products.map(p => renderProductCard(p)).join('');
+
+            } catch (err) {
+                console.warn('Catalog load error:', err);
+                grid.innerHTML = `
+                    <div class="catalog-empty-state">
+                        <i class="fas fa-shoe-prints"></i>
+                        <h4>Catálogo en preparación</h4>
+                        <p>Pronto encontrarás aquí toda nuestra colección. Mientras tanto, consulta nuestro producto estrella arriba.</p>
+                    </div>`;
+            }
+        }
+
+        function renderProductCard(product) {
+            const sizes = product.sizes ? product.sizes.split(',').map(s => s.trim()) : [];
+            const isAvailable = product.available !== false;
+            const isFeatured = product.featured === true;
+
+            const sizeTags = sizes.map(s => `<span class="catalog-size-tag">${s}</span>`).join('');
+
+            const featuredBadge = isFeatured
+                ? `<div class="catalog-badge-featured"><i class="fas fa-star"></i> Destacado</div>`
+                : '';
+
+            const stockBadge = isAvailable
+                ? `<div class="catalog-badge-stock"><i class="fas fa-check-circle"></i> Disponible</div>`
+                : `<div class="catalog-badge-stock out-of-stock"><i class="fas fa-times-circle"></i> Agotado</div>`;
+
+            return `
+                <div class="catalog-card">
+                    <div class="catalog-card-img">
+                        <img src="${product.image}" alt="${product.title}" loading="lazy">
+                        ${featuredBadge}
+                        ${stockBadge}
+                    </div>
+                    <div class="catalog-card-body">
+                        <div class="catalog-card-ref">${product.reference || ''}</div>
+                        <h3 class="catalog-card-title">${product.title}</h3>
+                        <div class="catalog-card-price">${product.price || ''}</div>
+                        <div class="catalog-card-color"><i class="fas fa-palette"></i> ${product.color || ''}</div>
+                        <p class="catalog-card-desc">${product.description || ''}</p>
+                        <div class="catalog-card-sizes">${sizeTags}</div>
+                        <div class="catalog-card-actions">
+                            <a href="javascript:void(0)" onclick="orderProductWA('${product.title.replace(/'/g, "\\'")}'  , '${(product.reference || '').replace(/'/g, "\\'")}')" class="btn-catalog-wa" ${!isAvailable ? 'style="opacity:0.5;pointer-events:none"' : ''}>
+                                <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>`;
+        }
+
+        function orderProductWA(title, reference) {
+            const message = `Hola SPEEDY WAY ⚓, deseo realizar el pedido del calzado:\n\n👞 Modelo: ${title}\n📋 Referencia: ${reference}\n\n¿Me confirman disponibilidad, tallas y costo de envío a mi ciudad? Muchas gracias.`;
+            const url = `https://wa.me/${PHONE_WA}?text=${encodeURIComponent(message)}`;
+            window.open(url, '_blank');
+        }
+
         // Initialize on load
         document.addEventListener('DOMContentLoaded', () => {
             renderSizes();
+            loadCatalog();
         });
     </script>
+    <!-- Netlify Identity Redirect (required for /admin login) -->
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on('init', user => {
+                if (!user) {
+                    window.netlifyIdentity.on('login', () => {
+                        document.location.href = '/admin/';
+                    });
+                }
+            });
+        }
+    </script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </body>
 </html>

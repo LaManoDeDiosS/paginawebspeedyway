@@ -11,9 +11,15 @@ collections:
     folder: "content/shoes"
     create: true
     slug: "{{slug}}"
+    extension: "json"
+    format: "json"
     fields:
       - { label: "Nombre del Modelo", name: "title", widget: "string" }
       - { label: "Referencia", name: "reference", widget: "string" }
+      - { label: "Precio (ej: $189.900)", name: "price", widget: "string" }
+      - { label: "Color", name: "color", widget: "string", default: "Cuero Coñac" }
       - { label: "Foto Principal", name: "image", widget: "image" }
-      - { label: "Precio / Descripción", name: "description", widget: "text" }
-      - { label: "Tallas Disponibles", name: "sizes", widget: "list" }
+      - { label: "Descripción Corta", name: "description", widget: "text" }
+      - { label: "Tallas Disponibles (separar con coma: 38,39,40,41,42)", name: "sizes", widget: "string", default: "38,39,40,41,42,43,44" }
+      - { label: "Disponible en Stock", name: "available", widget: "boolean", default: true }
+      - { label: "Producto Destacado", name: "featured", widget: "boolean", default: false }
