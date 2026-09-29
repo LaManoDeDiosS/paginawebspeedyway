@@ -3,15 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPEEDY WAY ® | Mocasines Náuticos 100% Cuero Genuino</title>
-    <meta name="description" content="Descubre los mejores mocasines náuticos 100% cuero genuino en Speedy Way. Calidad premium, comodidad y elegancia en cada paso.">
+    <title>SPEEDY WAY ® | Mocasines Náuticos, Apaches y Zapatos de Cuero Genuino</title>
+    <meta name="description" content="Venta de mocasines náuticos, zapatos apaches y calzado de cuero genuino para hombre. Calidad premium, elegancia y máximo confort en Speedy Way. Envíos en Colombia.">
+    <meta name="keywords" content="zapatos, mocasines, apaches, mocasines nauticos, zapatos apaches, zapatos de cuero, calzado de hombre, cuero genuino, calzado masculino, speedy way, speedywayshop">
     <link rel="canonical" href="https://speedywayshop.com/">
     
     <!-- Open Graph / Vista previa en WhatsApp y Redes Sociales -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://speedywayshop.com/">
-    <meta property="og:title" content="SPEEDY WAY ® | Mocasines Náuticos 100% Cuero Genuino">
-    <meta property="og:description" content="Mocasines náuticos 100% cuero genuino. Elegancia, confort y durabilidad en Speedy Way Shop.">
+    <meta property="og:title" content="SPEEDY WAY ® | Mocasines, Apaches y Zapatos 100% Cuero Genuino">
+    <meta property="og:description" content="Mocasines náuticos, apaches y zapatos de cuero genuino para hombre. Elegancia, confort y durabilidad en Speedy Way Shop.">
+    <meta property="og:image" content="https://speedywayshop.com/Logos/product-sheraton-main.jpg">
+
+    <!-- Schema.org JSON-LD Datos Estructurados para Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ShoeStore",
+      "name": "Speedy Way",
+      "image": "https://speedywayshop.com/Logos/logo-speedy.svg",
+      "url": "https://speedywayshop.com/",
+      "telephone": "+573000000000",
+      "priceRange": "$$",
+      "description": "Tienda especializada en mocasines náuticos, zapatos apaches y calzado masculino en 100% cuero genuino.",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Catálogo de Zapatos y Mocasines de Cuero",
+        "itemListElement": [
+          {
+            "@type": "OfferCatalog",
+            "name": "Mocasines Náuticos y Apaches",
+            "itemListElement": [
+              {
+                "@type": "Product",
+                "name": "Mocasín Náutico Sheraton Coñac Ref. 3000",
+                "description": "Mocasín náutico y zapato apache en 100% cuero vacuno genuino con costuras hechas a mano.",
+                "image": "https://speedywayshop.com/Logos/product-sheraton-main.jpg",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "149900",
+                  "priceCurrency": "COP",
+                  "availability": "https://schema.org/InStock"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+    </script>
+
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,6 +80,15 @@
             --font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
         }
 
+        /* Ocultar barra/widget inyectado por Netlify */
+        [data-netlify-deploy-preview-inject],
+        iframe[src*="netlify"],
+        #netlify-modal-overlay,
+        div[class*="netlify-drawer"],
+        .netlify-badge {
+            display: none !important;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -47,6 +97,7 @@
 
         html {
             scroll-behavior: smooth;
+            overflow-x: hidden;
         }
 
         body {
@@ -1366,14 +1417,49 @@
             font-size: 0.95rem;
         }
 
-        /* Responsive Breakpoints */
+        /* ═══════════ HAMBURGER MENU ═══════════ */
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            z-index: 1100;
+            position: relative;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 26px;
+            height: 2.5px;
+            background: var(--color-white);
+            margin: 5px 0;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5.5px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+
+        /* ═══════════ RESPONSIVE BREAKPOINTS ═══════════ */
+
+        /* Tablet Landscape & Small Desktop */
         @media (max-width: 1024px) {
             .hero-content {
                 grid-template-columns: 1fr;
                 text-align: center;
             }
             .hero-text h1 {
-                font-size: 3.4rem;
+                font-size: 3.2rem;
             }
             .hero-text p {
                 margin: 0 auto 30px;
@@ -1384,6 +1470,18 @@
             .hero-actions {
                 justify-content: center;
             }
+            .hero-showcase {
+                max-width: 520px;
+                margin: 0 auto;
+            }
+            .floating-badge.badge-top {
+                top: -10px;
+                right: 0;
+            }
+            .floating-badge.badge-bottom {
+                bottom: -10px;
+                left: 0;
+            }
             .flagship-card {
                 grid-template-columns: 1fr;
             }
@@ -1391,32 +1489,282 @@
                 border-right: none;
                 border-bottom: 1px solid rgba(10, 49, 144, 0.06);
             }
-            .craft-grid, .campaign-grid {
-                grid-template-columns: 1fr;
+            .craft-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .campaign-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
             .catalog-grid {
                 grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             }
             .footer-container {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr 1fr;
+            }
+            .section-title {
+                font-size: 2.6rem;
+            }
+            .section-header {
+                margin: 60px auto 40px;
             }
         }
 
-        @media (max-width: 640px) {
+        /* Tablet Portrait & Large Phones */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+            .nav-links {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(3, 15, 38, 0.98);
+                backdrop-filter: blur(16px);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 0;
+                z-index: 1050;
+                padding: 80px 24px;
+            }
+            .nav-links.open {
+                display: flex;
+            }
+            .nav-links li {
+                width: 100%;
+                text-align: center;
+            }
+            .nav-links a {
+                display: block;
+                padding: 18px 24px;
+                font-size: 1.15rem;
+                letter-spacing: 2px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            }
+            .social-nav-icons {
+                display: none;
+            }
+            .hero {
+                padding: 60px 20px 70px;
+            }
             .hero-text h1 {
-                font-size: 2.5rem;
+                font-size: 2.6rem;
+            }
+            .hero-card-frame {
+                padding: 16px;
+            }
+            .announcement-bar {
+                font-size: 0.72rem;
+                padding: 8px 12px;
+                gap: 6px;
+            }
+            .announcement-bar span:nth-child(3) {
+                display: none;
+            }
+            .product-title-luxury {
+                font-size: 2.2rem;
+            }
+            .craft-grid {
+                grid-template-columns: 1fr;
+            }
+            .campaign-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            .craft-section {
+                padding: 60px 20px;
+            }
+            .campaign-section {
+                padding: 60px 20px;
+            }
+            .catalog-section {
+                padding: 60px 20px;
+            }
+            .section-header {
+                margin: 50px auto 30px;
+            }
+            .section-title {
+                font-size: 2.2rem;
+            }
+            .modal-box {
+                padding: 28px 20px;
+                border-radius: 20px;
+            }
+            .modal-title {
+                font-size: 1.7rem;
+            }
+        }
+
+        /* Mobile Phones */
+        @media (max-width: 480px) {
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+            .hero-text p {
+                font-size: 0.95rem;
+            }
+            .hero {
+                padding: 36px 16px 50px;
+            }
+            .hero-badges {
+                gap: 8px;
+            }
+            .badge-pill {
+                padding: 8px 14px;
+                font-size: 0.78rem;
+                gap: 6px;
+            }
+            .hero-actions {
+                flex-direction: column;
+                width: 100%;
+            }
+            .btn-cta-primary,
+            .btn-cta-secondary {
+                width: 100%;
+                justify-content: center;
+                padding: 14px 24px;
+                font-size: 0.92rem;
+            }
+            .hero-card-frame {
+                padding: 10px;
+                border-radius: 18px;
+            }
+            .floating-badge {
+                padding: 8px 10px;
+                border-radius: 10px;
+                gap: 8px;
+            }
+            .floating-badge.badge-top {
+                top: -6px;
+                right: 4px;
+            }
+            .floating-badge.badge-bottom {
+                bottom: -6px;
+                left: 4px;
+            }
+            .floating-badge i {
+                font-size: 1rem;
+            }
+            .floating-badge .badge-text h4 {
+                font-size: 0.75rem;
+            }
+            .floating-badge .badge-text p {
+                font-size: 0.65rem;
+            }
+            .section-title {
+                font-size: 1.8rem;
+            }
+            .section-subtitle {
+                font-size: 0.9rem;
+            }
+            .section-tag {
+                font-size: 0.75rem;
             }
             .sizes-grid-dynamic {
                 grid-template-columns: repeat(4, 1fr);
             }
             .product-purchase-side {
-                padding: 30px 20px;
+                padding: 24px 16px;
             }
             .product-gallery-side {
-                padding: 20px;
+                padding: 14px;
             }
             .gallery-main-view {
-                height: 320px;
+                height: 260px;
+                padding: 10px;
+            }
+            .gallery-thumbnails {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 8px;
+            }
+            .thumb-btn {
+                height: 60px;
+                border-radius: 10px;
+                padding: 3px;
+            }
+            .product-title-luxury {
+                font-size: 1.8rem;
+            }
+            .product-desc-lead {
+                font-size: 0.88rem;
+            }
+            .size-selection-block {
+                padding: 16px;
+                border-radius: 14px;
+            }
+            .size-header-row {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+            .size-range-selector {
+                flex-direction: column;
+                gap: 6px;
+            }
+            .btn-order-wa {
+                padding: 15px 20px;
+                font-size: 0.92rem;
+                border-radius: 14px;
+            }
+            .catalog-grid {
+                grid-template-columns: 1fr;
+            }
+            .catalog-card-img {
+                height: 220px;
+            }
+            .craft-content h3 {
+                font-size: 1.4rem;
+            }
+            .nav-container {
+                padding: 10px 16px;
+            }
+            .logo-box img {
+                height: 36px;
+            }
+            footer {
+                padding: 40px 16px 24px;
+            }
+            .floating-wa {
+                width: 52px;
+                height: 52px;
+                font-size: 1.6rem;
+                bottom: 18px;
+                right: 18px;
+            }
+            .announcement-bar {
+                font-size: 0.65rem;
+                padding: 6px 10px;
+                letter-spacing: 0.8px;
+            }
+            .announcement-bar span:nth-child(2),
+            .announcement-bar span:nth-child(3) {
+                display: none;
+            }
+            .campaign-info {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+                padding: 14px;
+            }
+            .spec-chip {
+                font-size: 0.75rem;
+                padding: 4px 8px;
+            }
+            .guarantee-microtext {
+                font-size: 0.7rem;
+                flex-wrap: wrap;
+            }
+            .order-summary-pill {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+                font-size: 0.82rem;
             }
         }
     </style>
@@ -1451,6 +1799,11 @@
                 <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
                 <a href="javascript:void(0)" onclick="orderWhatsApp()" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
             </div>
+            <button class="hamburger" id="hamburger-btn" onclick="toggleMenu()" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
@@ -1462,7 +1815,7 @@
                     <i class="fas fa-anchor"></i> Colección Náutica de Lujo
                 </div>
                 <h1>Elegancia que <span>marca tu camino</span></h1>
-                <p>Versatilidad, confort anatómico y máxima distinción en cada paso. Mocasines náuticos elaborados 100% en cuero genuino con suela antideslizante para tus mejores destinos.</p>
+                <p>Versatilidad, confort anatómico y máxima distinción en cada paso. Mocasines náuticos, zapatos apaches y calzado de cuero genuino elaborados 100% en piel vacuna con suela antideslizante para tus mejores destinos.</p>
                 
                 <div class="hero-badges">
                     <div class="badge-pill"><i class="fas fa-feather-alt"></i> Ligero & Flexible</div>
@@ -1947,10 +2300,32 @@
             window.open(url, '_blank');
         }
 
+        // Hamburger menu toggle
+        function toggleMenu() {
+            const nav = document.querySelector('.nav-links');
+            const btn = document.getElementById('hamburger-btn');
+            nav.classList.toggle('open');
+            btn.classList.toggle('active');
+            document.body.style.overflow = nav.classList.contains('open') ? 'hidden' : 'auto';
+        }
+
         // Initialize on load
         document.addEventListener('DOMContentLoaded', () => {
             renderSizes();
             loadCatalog();
+
+            // Close mobile menu when clicking a nav link
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    const nav = document.querySelector('.nav-links');
+                    const btn = document.getElementById('hamburger-btn');
+                    if (nav.classList.contains('open')) {
+                        nav.classList.remove('open');
+                        btn.classList.remove('active');
+                        document.body.style.overflow = 'auto';
+                    }
+                });
+            });
         });
     </script>
     <!-- Netlify Identity Redirect (required for /admin login) -->
