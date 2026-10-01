@@ -1,0 +1,6 @@
+# Configuración para desactivar barras e inyecciones de Netlify Drawer/Toolbar
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"

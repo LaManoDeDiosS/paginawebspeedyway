@@ -1,21 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://speedywayshop.com/</loc>
-    <lastmod>2026-09-28</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://speedywayshop.com/#producto</loc>
-    <lastmod>2026-09-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://speedywayshop.com/#catalogo</loc>
-    <lastmod>2026-09-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://speedywayshop.com/Logos/product-sheraton-main.jpg</image:loc>
+      <image:title>Mocasín Náutico Sheraton Coñac - Calzado y Zapatos Apaches de Cuero Genuino</image:title>
+      <image:caption>Mocasín náutico clásico para hombre elaborado artesanalmente en cuero genuino por Speedy Way.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://speedywayshop.com/Logos/shoe_negro.jpg</image:loc>
+      <image:title>Apache Confort Negro - Zapatos Apaches en Cuero</image:title>
+      <image:caption>Zapato clásico apache en cuero negro de grano completo con suela robusta de uso diario.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://speedywayshop.com/Logos/shoe_mostaza.jpg</image:loc>
+      <image:title>Apache Driver Mostaza - Mocasín Gamuza Hombre</image:title>
+      <image:caption>Mocasín tipo driver en gamuza mostaza con suela flexible antideslizante.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://speedywayshop.com/Logos/shoe_tabaco.jpg</image:loc>
+      <image:title>Apache Rústico Tabaco - Calzado Hombre Cuero Envejecido</image:title>
+      <image:caption>Zapato estilo apache en cuero marrón tabaco con costuras rústicas hechas a mano.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://speedywayshop.com/Logos/shoe_borgona.jpg</image:loc>
+      <image:title>Mocasín Antifaz Borgoña - Zapatos Penny Loafer Cuero</image:title>
+      <image:caption>Sofisticado mocasín antifaz en cuero genuino color borgoña.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://speedywayshop.com/Logos/shoe_azul_marino.jpg</image:loc>
+      <image:title>Mocasín Náutico Azul Marino - Calzado Náutico Cuero</image:title>
+      <image:caption>Mocasín náutico en cuero azul marino con suela blanca antideslizante.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://speedywayshop.com/Logos/shoe_bicolor.jpg</image:loc>
+      <image:title>Mocasín Náutico Bicolor - Zapatos Apaches Náuticos</image:title>
+      <image:caption>Mocasín náutico de diseño bicolor en cuero azul marino y blanco.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://speedywayshop.com/Logos/shoe_otelo_negro.jpg</image:loc>
+      <image:title>Mocasín Otelo Negro x Coñac - Calzado Masculino en Cuero</image:title>
+      <image:caption>Elegante mocasín en cuero negro con detalles en coñac y suela blanca.</image:caption>
+    </image:image>
   </url>
 </urlset>
